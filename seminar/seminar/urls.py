@@ -20,3 +20,4 @@ import feedpage.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', feedpage.views.index, name='index'), 
+]

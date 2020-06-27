@@ -1,0 +1,32 @@
+
+<h1> Sign Up! </h1>
+
+<form action= "{% url 'signup' %}" method = "POST">
+    {% csrf_token %}
+    사용자 이름:
+    <br>
+    <input name="username" type="text" value="">
+    <br>
+    <br>
+    비밀번호:
+    <br>
+    <input name="password_1" type="password" value="">
+    <br>
+    <br>
+    비밀번호 확인:
+    <br>
+    <input name="password_2" type="password" value="">
+    <br>
+    <br>
+    대학
+    <input name="college" type="text" value="">
+    <br>
+    <br>
+    전공
+    <input name="major" type="text" value="">
+    <br>
+    <br>
+    나이
+    <input name="age" type="number" value="">
+    <input type="submit" value="Sign Up!">
+</form>
